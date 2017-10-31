@@ -1,0 +1,14 @@
+{% extends 'include/base.html' %}
+{% block title %}
+  <h1>this is the extends title</h1>
+{% endblock %}
+
+{% block nav %}
+  "block nav"在nav.html中,base.html include了nav.html.渲染后base.html就没有了"blocak nav"{% endblock %}
+{% block notExist %}
+  <h1>这是一个不存在的block</h1>
+{% endblock %}
+
+{% block content %}
+  <h1>this is the extends content</h1>
+{% endblock %}

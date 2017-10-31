@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/python实验室.iml" filepath="$PROJECT_DIR$/.idea/python实验室.iml" />
+      <module fileurl="file://$PROJECT_DIR$/学习collections/学习collections.iml" filepath="$PROJECT_DIR$/学习collections/学习collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NetWatcher/NetWatcher.iml" filepath="$PROJECT_DIR$/NetWatcher/NetWatcher.iml" />
+    </modules>
+  </component>
+</project>

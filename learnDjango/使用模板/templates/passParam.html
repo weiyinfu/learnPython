@@ -1,0 +1,74 @@
+<h1>{{ string }}</h1>
+<p>
+<table>
+  <th>
+  <td>data</td>
+  <td>forloop.first</td>
+  <td>forloop.last</td>
+  <td>forloop.counter</td>
+  <td>forloop.revcounter</td>
+  <td>forloop.counter0</td>
+  <td>forloop.revcounter0</td>
+  </th>
+  {% for i in list reversed %}
+    <tr>
+      <td>{{ i }}</td>
+      <td>{{ forloop.first }}</td>
+      <td>{{ forloop.last }}</td>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ forloop.revcounter }}</td>
+      <td>{{ forloop.counter0 }}</td>
+      <td>{{ forloop.revcounter0 }}</td>
+    </tr>
+  {% endfor %}
+</table>
+</p>
+
+<hr>
+{% for i in numbers %}
+  {% for j in i %}
+    numbers[{{ forloop.parentloop.counter }}][{{ forloop.counter }}]={{ j }}
+    <br>
+  {% endfor %}
+{% endfor %}
+
+<p>
+  {% for k,v in dic.items %}
+    {% if forloop.first %}
+      this is the first:
+    {% elif forloop.last %}
+      this is the last:
+    {% else %}
+      this is not the first and this is not the last,this is the {{ forloop.counter }}: {% endif %}{{ k }}=
+    {{ v }}
+    <br>
+  {% endfor %}
+</p>
+
+<p>{{ dic.one }}</p>
+<p>{{ list.0 }}</p>
+
+{# 使用过滤器,过滤器可以连续使用 #}
+<p>{{ user.name|lower }},{{ user.age }},{{ user.name|first|lower }}</p>
+
+<br>只能调用无参函数{{ user.getName }}
+
+{#
+request变量是由TEMPLATE_CONTEXT_PROCESSORS中的
+"django.core.context_processors.request" 引入的
+#}
+<p>{{ request.GET }}
+  <br>{{ request.path }}
+</p>
+
+{# 使用ifequal标签 #}
+{% ifequal user.name "weidiao" %}
+  you are weidiao ! welcome !
+{% else %}
+  you are not weidiao ! how bad!
+{% endifequal %}
+
+{# 使用ifnotequal标签 #}
+{% ifnotequal user.name "weidiao" %}
+  you are not weidiao !!!!!!!!!!1
+{% endifnotequal %}
