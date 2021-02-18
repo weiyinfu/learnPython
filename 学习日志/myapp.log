@@ -1,6 +1,0 @@
-Fri, 28 Jul 2017 13:38:11 3-将日志输出到多个地方.py[line:20] DEBUG This is debug message
-Fri, 28 Jul 2017 13:38:11 3-将日志输出到多个地方.py[line:21] INFO This is info message
-Fri, 28 Jul 2017 13:38:11 3-将日志输出到多个地方.py[line:22] WARNING This is warning message
-Fri, 28 Jul 2017 13:40:26 5-通过config文件配置日志.py[line:7] DEBUG This is debug message
-Fri, 28 Jul 2017 13:40:26 5-通过config文件配置日志.py[line:8] INFO This is info message
-Fri, 28 Jul 2017 13:40:26 5-通过config文件配置日志.py[line:9] WARNING This is warning message

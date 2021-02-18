@@ -1,4 +1,10 @@
 from collections import defaultdict
 
-dic = defaultdict(lambda: "I don't know", {'one': 1, 'two': 2, 'three': 3})
+
+def function():
+    return "I don't know"
+
+
+dic = defaultdict(function)
+dic.update(dict(one=1, two=2, three=3))
 print(dic['four'])
