@@ -1,0 +1,16 @@
+<html>
+<head></head>
+<body>
+<form action="/api/upload_three" method="post" enctype="multipart/form-data">
+    <input name="username">
+    <input type="file" name="f">
+    <button type="submit">提交</button>
+</form>
+</body>
+<script>
+    function onsubmit() {
+        const x = document.querySelector('form')
+        x.submit()
+    }
+</script>
+</html>
